@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 20px
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.navbar-links:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+.navbar-menu-toggle {
+    display: none;
+}
+
+.side-navbar {
+    background-color: darkblue;
+    color: white;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    transition: 2s;
+}
+
+.side-navbar-link {
+    margin-bottom: 30px;
+}
+
+.side-navbar-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.header-button {
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.service {
+    padding: 20px;
+}
+
+.service-container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-container-2 div {
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.new-arrival {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.new-arrival-container {
+    position: relative;
+    flex-basis: 20%;
+}
+
+.new-arrival button {
+    padding: 5% 8% 5% 8%;
+    margin-top: 10px;
+    background-color: aqua;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    border: none;
+    border-radius: 10px;
+}
+
+.news {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news input {
+    padding: 10px;
+    width: 120vb;
+    margin-bottom: 10px;
+    border: solid black 3px;
+}
+
+.news button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 40px;
+    background-color: black;
+    color: white;
+}
+
+.product-section {
+    margin-top: 20px;
+}
+
+.product-search {
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.product-search input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.product-search input:focus {
+    outline: none;
+}
+
+.products {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.products-box {
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.products-box img {
+    border-radius: 100%;
+}
+
+.contact-section {
+    background-color: black;
+    padding: 50px 20px;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 10px;
+    max-width: 900px;
+}
+
+.contact-container {
+    text-align: left;
+}
+
+.contact-container h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-container p {
+    margin: 0 0 8px 0;
+    font-weight: bold;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-container textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-container button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-container button:hover {
+    background-color: darkblue;
+}
+
+
+/* media Query */
+
+@media screen and (max-width:700px) {
+    .navbar-menu-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .header-image {
+        display: none;
+    }
+
+    .service-container-1 {
+        display: none;
+    }
+
+    .service-container-2 {
+        flex-direction: column;
+    }
+
+    .contact-section {
+        padding: 30px 10px;
+    }
+
+    .contact-container h1 {
+        font-size: 1.5rem;
+    }
+}
